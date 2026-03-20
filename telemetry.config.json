@@ -1,5 +1,5 @@
 {
-  "name": "grafana",
+  "name": "test-site",
   "logoPath": "assets/grafana.webp",
   "version": "1.0.0",
   "mountPoints": {
