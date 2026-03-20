@@ -3,32 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Site</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-      background: #f0f0f0;
-    }
-    .container {
-      text-align: center;
-      background: white;
-      padding: 40px 60px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    h1 { color: #333; }
-    p { color: #666; }
-  </style>
+  <title>{{title}}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300..900&family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=VT323&display=swap" rel="stylesheet">
+  <script type="module" src="/src/index.tsx"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>Hello World</h1>
-    <p>This is a basic test site.</p>
-  </div>
+  <div id="app"></div>
 </body>
 </html>

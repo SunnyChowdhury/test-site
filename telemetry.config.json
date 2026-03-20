@@ -1,7 +1,7 @@
 {
   "name": "test-site",
-  "logoPath": "assets/grafana.webp",
-  "version": "1.0.0",
+  "thumbnailPath": "assets/tos-app.svg",
+  "version": "0.1.0",
   "mountPoints": {
     "render": "/render",
     "settings": "/settings"
