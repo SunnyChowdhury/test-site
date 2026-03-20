@@ -1,0 +1,13 @@
+{
+  "name": "grafana",
+  "logoPath": "assets/grafana.webp",
+  "version": "1.0.0",
+  "mountPoints": {
+    "render": "/render",
+    "settings": "/settings"
+  },
+  "devServer": {
+    "runCommand": "vite --port 3000",
+    "url": "http://localhost:3000"
+  }
+}
