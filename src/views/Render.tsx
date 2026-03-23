@@ -356,74 +356,8 @@ export function Render() {
   const showMessage = !streamUrl || state === 'error' || state === 'unsupported'
 
   return (
-    <div key={animation} className={layoutClasses} style={{ ...applyThemeVars(theme), '--page-padding': pagePadding } as React.CSSProperties}>
-      {/* Theme-specific background effects */}
-      {showBackground && resolvedName === 'telemetryos' && <div className="tos-sweep" />}
-      {showBackground && resolvedName === 'neon-pulse' && (
-        <div className="neon-pulse-bg">
-          <div className="neon-pulse-bg__orb" />
-          <div className="neon-pulse-bg__orb" />
-          <div className="neon-pulse-bg__orb" />
-        </div>
-      )}
-      {showBackground && resolvedName === 'solar-flare' && <div className="solar-flare-bg" />}
-      {showBackground && resolvedName === 'arctic-aurora' && <div className="arctic-aurora-bg" />}
-      {showBackground && resolvedName === 'the-matrix' && <div className="matrix-scanlines" />}
-
-      <main className="content-body">
-        <section className="content-card live-video-card">
-          {showBackground && resolvedName === 'emerald-matrix' && <FlickeringGrid color="rgb(0, 230, 118)" maxOpacity={0.3} flickerChance={0.3} squareSize={4} gridGap={6} />}
-
-          {/* Video player container */}
-          <div ref={containerRef} className="live-video-container">
-            {/* Loading spinner */}
-            {state === 'loading' && (
-              <div className="live-video-overlay">
-                <Loader2 className="live-video-spinner" />
-              </div>
-            )}
-
-            {/* Video element for HLS / direct HTTP streams */}
-            {showVideo && (
-              <video
-                ref={videoRef}
-                className="live-video-player"
-                style={playerStyle}
-                muted={mute}
-                autoPlay
-                playsInline
-              />
-            )}
-
-            {/* Messages overlay */}
-            {showMessage && (
-              <div className="live-video-messages">
-                {!streamUrl && (
-                  <>
-                    <Video className="live-video-messages__icon" />
-                    <p className="live-video-messages__text">No stream URL configured</p>
-                    <p className="live-video-messages__hint">Add a stream URL in the settings panel</p>
-                  </>
-                )}
-                {streamUrl && state === 'unsupported' && error && (
-                  <>
-                    <VideoOff className="live-video-messages__icon" />
-                    <p className="live-video-messages__text">{error.message}</p>
-                    <p className="live-video-messages__url">{redactStreamUrl(streamUrl)}</p>
-                  </>
-                )}
-                {streamUrl && state === 'error' && error && (
-                  <>
-                    <AlertTriangle className="live-video-messages__icon live-video-messages__icon--error" />
-                    <p className="live-video-messages__text">{error.message}</p>
-                    <p className="live-video-messages__url">{redactStreamUrl(streamUrl)}</p>
-                  </>
-                )}
-              </div>
-            )}
-          </div>
-        </section>
-      </main>
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', color: 'white', fontSize: '2rem' }}>
+      <p>Hello World</p>
     </div>
   )
 }
