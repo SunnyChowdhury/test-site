@@ -63,6 +63,7 @@ export function Settings() {
             placeholder="rtsp://... or https://.../*.m3u8"
             onChange={(e) => setStreamUrl(e.target.value)}
           /> */}
+          <></>
         </SettingsInputFrame>
         <SettingsHint>Supports RTSP, RTMP, HLS (.m3u8), HTTP/HTTPS video streams</SettingsHint>
       </SettingsField>
@@ -79,6 +80,7 @@ export function Settings() {
             step={10}
             onChange={(e) => setVideoWidth(clampSize(parseInt(e.target.value) || 960))}
           /> */}
+          <></>
         </SettingsInputFrame>
         <SettingsHint>Video resolution width in pixels ({MIN_SIZE}-{MAX_SIZE})</SettingsHint>
       </SettingsField>
@@ -95,6 +97,7 @@ export function Settings() {
             step={10}
             onChange={(e) => setVideoHeight(clampSize(parseInt(e.target.value) || 540))}
           /> */}
+          <></>
         </SettingsInputFrame>
         <SettingsHint>Video resolution height in pixels ({MIN_SIZE}-{MAX_SIZE})</SettingsHint>
       </SettingsField>
@@ -124,6 +127,7 @@ export function Settings() {
               <option key={key} value={key}>{theme.label}</option>
             ))}
           </select> */}
+          <></>
         </SettingsSelectFrame>
       </SettingsField>
 
@@ -139,6 +143,7 @@ export function Settings() {
             value={uiScale}
             onChange={(e) => setUiScale(parseFloat(e.target.value))}
           /> */}
+          <></>
           <span>{uiScale}x</span>
         </SettingsSliderFrame>
       </SettingsField>
@@ -156,6 +161,7 @@ export function Settings() {
             onChange={(e) => setPagePadding(parseFloat(e.target.value))}
           />
           <span>{pagePadding}x</span> */}
+          <></>
         </SettingsSliderFrame>
       </SettingsField>
 
@@ -182,6 +188,7 @@ export function Settings() {
             <option value="glitch">Glitch</option>
             <option value="none">None</option>
           </select> */}
+          <></>
         </SettingsSelectFrame>
       </SettingsField>
 
