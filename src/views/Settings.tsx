@@ -56,13 +56,13 @@ export function Settings() {
       <SettingsField>
         <SettingsLabel>URL</SettingsLabel>
         <SettingsInputFrame>
-          <input
+          {/* <input
             type="url"
             disabled={isLoading}
             value={streamUrl}
             placeholder="rtsp://... or https://.../*.m3u8"
             onChange={(e) => setStreamUrl(e.target.value)}
-          />
+          /> */}
         </SettingsInputFrame>
         <SettingsHint>Supports RTSP, RTMP, HLS (.m3u8), HTTP/HTTPS video streams</SettingsHint>
       </SettingsField>
@@ -70,7 +70,7 @@ export function Settings() {
       <SettingsField>
         <SettingsLabel>Width</SettingsLabel>
         <SettingsInputFrame>
-          <input
+          {/* <input
             type="number"
             disabled={isLoading}
             value={videoWidth}
@@ -78,7 +78,7 @@ export function Settings() {
             max={MAX_SIZE}
             step={10}
             onChange={(e) => setVideoWidth(clampSize(parseInt(e.target.value) || 960))}
-          />
+          /> */}
         </SettingsInputFrame>
         <SettingsHint>Video resolution width in pixels ({MIN_SIZE}-{MAX_SIZE})</SettingsHint>
       </SettingsField>
@@ -86,7 +86,7 @@ export function Settings() {
       <SettingsField>
         <SettingsLabel>Height</SettingsLabel>
         <SettingsInputFrame>
-          <input
+          {/* <input
             type="number"
             disabled={isLoading}
             value={videoHeight}
@@ -94,14 +94,14 @@ export function Settings() {
             max={MAX_SIZE}
             step={10}
             onChange={(e) => setVideoHeight(clampSize(parseInt(e.target.value) || 540))}
-          />
+          /> */}
         </SettingsInputFrame>
         <SettingsHint>Video resolution height in pixels ({MIN_SIZE}-{MAX_SIZE})</SettingsHint>
       </SettingsField>
 
       <SettingsField>
         <SettingsSwitchFrame>
-          <input type="checkbox" disabled={isLoading} checked={mute} onChange={(e) => setMute(e.target.checked)} />
+          {/* <input type="checkbox" disabled={isLoading} checked={mute} onChange={(e) => setMute(e.target.checked)} /> */}
           <SettingsSwitchLabel>Mute Audio</SettingsSwitchLabel>
         </SettingsSwitchFrame>
       </SettingsField>
@@ -115,7 +115,7 @@ export function Settings() {
       <SettingsField>
         <SettingsLabel>Theme</SettingsLabel>
         <SettingsSelectFrame>
-          <select
+          {/* <select
             disabled={isLoading}
             value={themeName}
             onChange={(e) => setThemeName(e.target.value)}
@@ -123,14 +123,14 @@ export function Settings() {
             {Object.entries(themes).map(([key, theme]) => (
               <option key={key} value={key}>{theme.label}</option>
             ))}
-          </select>
+          </select> */}
         </SettingsSelectFrame>
       </SettingsField>
 
       <SettingsField>
         <SettingsLabel>UI Scale</SettingsLabel>
         <SettingsSliderFrame>
-          <input
+          {/* <input
             type="range"
             min={1}
             max={3}
@@ -138,7 +138,7 @@ export function Settings() {
             disabled={isLoading}
             value={uiScale}
             onChange={(e) => setUiScale(parseFloat(e.target.value))}
-          />
+          /> */}
           <span>{uiScale}x</span>
         </SettingsSliderFrame>
       </SettingsField>
@@ -146,7 +146,7 @@ export function Settings() {
       <SettingsField>
         <SettingsLabel>Padding</SettingsLabel>
         <SettingsSliderFrame>
-          <input
+          {/* <input
             type="range"
             min={0}
             max={3}
@@ -155,14 +155,14 @@ export function Settings() {
             value={pagePadding}
             onChange={(e) => setPagePadding(parseFloat(e.target.value))}
           />
-          <span>{pagePadding}x</span>
+          <span>{pagePadding}x</span> */}
         </SettingsSliderFrame>
       </SettingsField>
 
       <SettingsField>
         <SettingsLabel>Entrance Animation</SettingsLabel>
         <SettingsSelectFrame>
-          <select
+          {/* <select
             disabled={isLoading}
             value={animation}
             onChange={(e) => setAnimation(e.target.value)}
@@ -181,13 +181,13 @@ export function Settings() {
             <option value="blur">Blur</option>
             <option value="glitch">Glitch</option>
             <option value="none">None</option>
-          </select>
+          </select> */}
         </SettingsSelectFrame>
       </SettingsField>
 
       <SettingsField>
         <SettingsCheckboxFrame>
-          <input type="checkbox" disabled={isLoading} checked={showBackground} onChange={(e) => setShowBackground(e.target.checked)} />
+          {/* <input type="checkbox" disabled={isLoading} checked={showBackground} onChange={(e) => setShowBackground(e.target.checked)} /> */}
           <SettingsCheckboxLabel>Show Background</SettingsCheckboxLabel>
         </SettingsCheckboxFrame>
         <SettingsHint>Uncheck for a transparent background</SettingsHint>
