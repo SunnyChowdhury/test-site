@@ -56,13 +56,13 @@ export function Settings() {
       <SettingsField>
         <SettingsLabel>URL</SettingsLabel>
         <SettingsInputFrame>
-          {/* <input
+          <input
             type="url"
             disabled={isLoading}
             value={streamUrl}
             placeholder="rtsp://... or https://.../*.m3u8"
             onChange={(e) => setStreamUrl(e.target.value)}
-          /> */}
+          />
           <></>
         </SettingsInputFrame>
         <SettingsHint>Supports RTSP, RTMP, HLS (.m3u8), HTTP/HTTPS video streams</SettingsHint>
