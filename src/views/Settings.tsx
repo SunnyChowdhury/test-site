@@ -198,6 +198,7 @@ export function Settings() {
           <SettingsCheckboxLabel>Show Background</SettingsCheckboxLabel>
         </SettingsCheckboxFrame>
         <SettingsHint>Uncheck for a transparent background</SettingsHint>
+        <SettingsHint>Uncheck for a transparent background</SettingsHint>
       </SettingsField>
     </SettingsContainer>
   )
