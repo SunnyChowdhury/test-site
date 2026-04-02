@@ -1,7 +1,7 @@
 {
   "name": "test-site-1",
   "thumbnailPath": "assets/tos-app.svg",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "mountPoints": {
     "render": "/render",
     "settings": "/settings"
